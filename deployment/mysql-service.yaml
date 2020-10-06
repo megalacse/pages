@@ -13,3 +13,4 @@ spec:
     app: pages
     tier: database
   type: NodePort
+  
