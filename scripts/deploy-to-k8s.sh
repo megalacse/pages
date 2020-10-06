@@ -4,7 +4,7 @@ set -ex
 kubectl apply -f deployment/pages-namespace.yaml
 kubectl apply -f deployment/pages-config.yaml
 kubectl apply -f deployment/pages-service.yaml
-kubectl delete -f deployment/pages-deployment.yaml
+
 kubectl apply -f deployment/pages-deployment.yaml
 kubectl apply -f deployment/mysql-secret.yaml
 kubectl apply -f deployment/mysql-service.yaml
