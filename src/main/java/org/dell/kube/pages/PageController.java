@@ -25,8 +25,8 @@ public class PageController {
     @GetMapping("{id}")
     public ResponseEntity<Page> read(@PathVariable long id) {
 
-        logger.info("READ-INFO:Fetching page with id = " + id);
-        logger.debug("READ-DEBUG:Fetching page with id = " + id);
+        logger.info("READ-INFO:Fetching page with id = " );
+        logger.debug("READ-DEBUG:Fetching page with id = ");
 
         Page page = pageRepository.read(id);
         if(page!=null)
@@ -41,8 +41,8 @@ public class PageController {
     public ResponseEntity<List<Page>> list() {
         logger.info("list method started.");
         List<Page> pages= pageRepository.list();
-        logger.info("update-INFO:Fetching page with id = " + pages.get(0).getId());
-        logger.debug("update-DEBUG:Fetching page with id = " + pages.get(0).getId());
+        logger.info("update-INFO:Fetching page with id = " );
+        logger.debug("update-DEBUG:Fetching page with id = " );
         return new ResponseEntity<List<Page>>(pages, HttpStatus.OK);
     }
     @PutMapping("{id}")
